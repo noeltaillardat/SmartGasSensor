@@ -368,8 +368,6 @@ F 3 "" H 2150 3450 50  0001 C CNN
 	1    2150 3450
 	1    0    0    -1  
 $EndComp
-Text Label 7600 3600 0    50   ~ 0
-Vin
 $Comp
 L kicad_win-rescue:R-Device R?
 U 1 1 5DD6D812
@@ -655,7 +653,7 @@ Gas_Trigger_Offset
 Text Label 10550 2400 0    50   ~ 0
 Gas_Trigger_Diff
 Text Label 8900 2600 2    50   ~ 0
-Gas_Temp
+Poly_Resistor
 Text Label 10550 1900 0    50   ~ 0
 Lora_TX
 Text Label 10550 1800 0    50   ~ 0
@@ -893,4 +891,33 @@ Wire Notes Line
 	8350 4100 7250 4100
 Text Label 8750 5200 2    50   ~ 0
 Gas_Value
+Text Label 10550 2000 0    50   ~ 0
+Buzzer
+Text Label 6600 3250 2    50   ~ 0
+Buzzer
+$Comp
+L kicad_win-rescue:GND-power #PWR?
+U 1 1 5DEA192E
+P 6600 3450
+F 0 "#PWR?" H 6600 3200 50  0001 C CNN
+F 1 "GND" H 6600 3300 50  0000 C CNN
+F 2 "" H 6600 3450 50  0000 C CNN
+F 3 "" H 6600 3450 50  0000 C CNN
+	1    6600 3450
+	0    1    1    0   
+$EndComp
+Wire Notes Line
+	6200 3000 7450 3000
+Wire Notes Line
+	7450 3000 7450 3600
+Wire Notes Line
+	6200 3000 6200 3600
+Wire Notes Line
+	6200 3600 7450 3600
+Text Notes 6250 3100 0    50   ~ 0
+El buzz
+Wire Notes Line
+	6600 3000 6600 3150
+Wire Notes Line
+	6600 3150 6200 3150
 $EndSCHEMATC
