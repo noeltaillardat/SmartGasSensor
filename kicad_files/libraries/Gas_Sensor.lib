@@ -1,0 +1,29 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Gas_Sensor_TO-5-10
+#
+DEF Gas_Sensor_TO-5-10 U 0 40 Y Y 1 F N
+F0 "U" -150 350 50 H V C CNN
+F1 "Gas_Sensor_TO-5-10" 400 350 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C -100 -150 180 0 1 0 N
+P 2 0 1 0 -300 -250 -250 -200 N
+P 2 0 1 0 -300 -150 -250 -150 N
+P 2 0 1 0 -300 -50 -250 -100 N
+P 2 0 1 0 100 -250 50 -200 N
+P 2 0 1 0 100 -150 50 -150 N
+P 2 0 1 0 100 -50 50 -100 N
+P 4 0 1 0 -250 -50 -300 0 -250 50 -200 0 N
+X TempSens 1 -400 -150 100 R 50 50 1 1 O
+X GasSens 2 -400 -50 100 R 50 50 1 1 O
+X Heater 3 -400 -250 100 R 50 50 1 1 O
+X ~ 4 200 -50 100 L 50 50 1 1 O
+X ~ 6 200 -150 100 L 50 50 1 1 O
+X ~ 8 200 -250 100 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+#End Library

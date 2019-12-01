@@ -1,4 +1,4 @@
 (sym_lib_table
-  (lib (name lora-cache)(type Legacy)(uri "C:/Users/noel/Documents/Cours/INSA/5-AE-ISS/2 - Smart devices/SmartGasSensor/lora/lora-cache.lib")(options "")(descr ""))
   (lib (name kicad_win-rescue)(type Legacy)(uri ${KIPRJMOD}/kicad_win-rescue.lib)(options "")(descr ""))
+  (lib (name Gas_Sensor)(type Legacy)(uri ${KIPRJMOD}/libraries/Gas_Sensor.lib)(options "")(descr ""))
 )

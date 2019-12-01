@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:kicad_win-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -315,7 +315,7 @@ U 1 1 5DCAB168
 P 7100 2100
 F 0 "D1" H 7093 2316 50  0000 C CNN
 F 1 "LED" H 7093 2225 50  0000 C CNN
-F 2 "LEDs:LED_D5.0mm" H 7100 2100 50  0001 C CNN
+F 2 "LEDs_THT:LED_D5.0mm" H 7100 2100 50  0001 C CNN
 F 3 "~" H 7100 2100 50  0001 C CNN
 	1    7100 2100
 	1    0    0    -1  
@@ -336,21 +336,21 @@ $EndComp
 Wire Wire Line
 	7400 2100 7250 2100
 $Comp
-L kicad_win-rescue:Device_Buzzer-lora-cache BZ?
+L kicad_win-rescue:Device_Buzzer-lora-cache BZ1
 U 1 1 5DD52A57
 P 6700 3350
-F 0 "BZ?" H 6853 3379 50  0000 L CNN
+F 0 "BZ1" H 6853 3379 50  0000 L CNN
 F 1 "Device_Buzzer" H 6853 3288 50  0000 L CNN
-F 2 "Buzzers_Beepers:BUZZER" V 6675 3450 50  0001 C CNN
+F 2 "Buzzers_Beepers:Buzzer_12x9.5RM7.6" V 6675 3450 50  0001 C CNN
 F 3 "" V 6675 3450 50  0001 C CNN
 	1    6700 3350
 	1    0    0    -1  
 $EndComp
 $Comp
-L kicad_win-rescue:C-Device C?
+L kicad_win-rescue:C-Device C3
 U 1 1 5DD53567
 P 4150 4200
-F 0 "C?" H 4265 4246 50  0000 L CNN
+F 0 "C3" H 4265 4246 50  0000 L CNN
 F 1 "C" H 4265 4155 50  0000 L CNN
 F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 4188 4050 50  0001 C CNN
 F 3 "~" H 4150 4200 50  0001 C CNN
@@ -358,21 +358,10 @@ F 3 "~" H 4150 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L kicad_win-rescue:+3.3V-power #PWR?
-U 1 1 5DD6147B
-P 2150 3450
-F 0 "#PWR?" H 2150 3300 50  0001 C CNN
-F 1 "+3.3V" H 2165 3623 50  0000 C CNN
-F 2 "" H 2150 3450 50  0001 C CNN
-F 3 "" H 2150 3450 50  0001 C CNN
-	1    2150 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L kicad_win-rescue:R-Device R?
+L kicad_win-rescue:R-Device R2
 U 1 1 5DD6D812
 P 2150 3650
-F 0 "R?" H 2000 3600 50  0000 C CNN
+F 0 "R2" H 2000 3600 50  0000 C CNN
 F 1 "R" H 2000 3700 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2265 3650 50  0001 C CNN
 F 3 "~" H 2150 3650 50  0001 C CNN
@@ -380,10 +369,10 @@ F 3 "~" H 2150 3650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L kicad_win-rescue:R-Device R?
+L kicad_win-rescue:R-Device R6
 U 1 1 5DD70B2E
 P 3000 4700
-F 0 "R?" H 2850 4650 50  0000 C CNN
+F 0 "R6" H 2850 4650 50  0000 C CNN
 F 1 "R" H 2850 4750 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3115 4700 50  0001 C CNN
 F 3 "~" H 3000 4700 50  0001 C CNN
@@ -391,10 +380,10 @@ F 3 "~" H 3000 4700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L kicad_win-rescue:R-Device R?
+L kicad_win-rescue:R-Device R5
 U 1 1 5DD73D74
 P 2550 4100
-F 0 "R?" H 2400 4050 50  0000 C CNN
+F 0 "R5" H 2400 4050 50  0000 C CNN
 F 1 "R" H 2400 4150 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2665 4100 50  0001 C CNN
 F 3 "~" H 2550 4100 50  0001 C CNN
@@ -402,10 +391,10 @@ F 3 "~" H 2550 4100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L kicad_win-rescue:R-Device R?
+L kicad_win-rescue:R-Device R7
 U 1 1 5DD74FA9
 P 3000 5050
-F 0 "R?" H 2850 5000 50  0000 C CNN
+F 0 "R7" H 2850 5000 50  0000 C CNN
 F 1 "R" H 2850 5100 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3115 5050 50  0001 C CNN
 F 3 "~" H 3000 5050 50  0001 C CNN
@@ -413,10 +402,10 @@ F 3 "~" H 3000 5050 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L kicad_win-rescue:R-Device R?
+L kicad_win-rescue:R-Device R8
 U 1 1 5DD794B5
 P 4500 4200
-F 0 "R?" H 4350 4150 50  0000 C CNN
+F 0 "R8" H 4350 4150 50  0000 C CNN
 F 1 "R" H 4350 4250 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4615 4200 50  0001 C CNN
 F 3 "~" H 4500 4200 50  0001 C CNN
@@ -424,10 +413,10 @@ F 3 "~" H 4500 4200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L kicad_win-rescue:C-Device C?
+L kicad_win-rescue:C-Device C4
 U 1 1 5DD7A1CA
 P 5100 4200
-F 0 "C?" H 5215 4246 50  0000 L CNN
+F 0 "C4" H 5215 4246 50  0000 L CNN
 F 1 "C" H 5215 4155 50  0000 L CNN
 F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 5138 4050 50  0001 C CNN
 F 3 "~" H 5100 4200 50  0001 C CNN
@@ -435,10 +424,10 @@ F 3 "~" H 5100 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L kicad_win-rescue:R-Device R?
+L kicad_win-rescue:R-Device R9
 U 1 1 5DD7B6B4
 P 4800 3950
-F 0 "R?" V 5007 3950 50  0000 C CNN
+F 0 "R9" V 5007 3950 50  0000 C CNN
 F 1 "R" V 4916 3950 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4915 3950 50  0001 C CNN
 F 3 "~" H 4800 3950 50  0001 C CNN
@@ -446,21 +435,21 @@ F 3 "~" H 4800 3950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L kicad_win-rescue:GND-power #PWR?
+L kicad_win-rescue:GND-power #PWR0103
 U 1 1 5DD7F427
-P 3450 4350
-F 0 "#PWR?" H 3450 4100 50  0001 C CNN
-F 1 "GND" H 3600 4250 50  0000 C CNN
-F 2 "" H 3450 4350 50  0001 C CNN
-F 3 "" H 3450 4350 50  0001 C CNN
-	1    3450 4350
+P 3350 4300
+F 0 "#PWR0103" H 3350 4050 50  0001 C CNN
+F 1 "GND" H 3350 4150 50  0000 C CNN
+F 2 "" H 3350 4300 50  0001 C CNN
+F 3 "" H 3350 4300 50  0001 C CNN
+	1    3350 4300
 	1    0    0    -1  
 $EndComp
 $Comp
-L kicad_win-rescue:GND-power #PWR?
+L kicad_win-rescue:GND-power #PWR0104
 U 1 1 5DD89F73
 P 2550 4350
-F 0 "#PWR?" H 2550 4100 50  0001 C CNN
+F 0 "#PWR0104" H 2550 4100 50  0001 C CNN
 F 1 "GND" H 2555 4177 50  0000 C CNN
 F 2 "" H 2550 4350 50  0001 C CNN
 F 3 "" H 2550 4350 50  0001 C CNN
@@ -470,10 +459,10 @@ $EndComp
 Wire Wire Line
 	2550 4350 2550 4250
 $Comp
-L kicad_win-rescue:C-Device C?
+L kicad_win-rescue:C-Device C1
 U 1 1 5DD7E55F
 P 2150 4100
-F 0 "C?" H 2265 4146 50  0000 L CNN
+F 0 "C1" H 2265 4146 50  0000 L CNN
 F 1 "C" H 2265 4055 50  0000 L CNN
 F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 2188 3950 50  0001 C CNN
 F 3 "~" H 2150 4100 50  0001 C CNN
@@ -481,10 +470,10 @@ F 3 "~" H 2150 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L kicad_win-rescue:GND-power #PWR?
+L kicad_win-rescue:GND-power #PWR0105
 U 1 1 5DD891B0
 P 2150 4350
-F 0 "#PWR?" H 2150 4100 50  0001 C CNN
+F 0 "#PWR0105" H 2150 4100 50  0001 C CNN
 F 1 "GND" H 2155 4177 50  0000 C CNN
 F 2 "" H 2150 4350 50  0001 C CNN
 F 3 "" H 2150 4350 50  0001 C CNN
@@ -509,15 +498,6 @@ Wire Wire Line
 Wire Wire Line
 	3350 4250 3350 4300
 Wire Wire Line
-	3350 4300 3450 4300
-Wire Wire Line
-	3550 4300 3550 4250
-Wire Wire Line
-	3450 4350 3450 4300
-Connection ~ 3450 4300
-Wire Wire Line
-	3450 4300 3550 4300
-Wire Wire Line
 	3000 4050 3000 4550
 Connection ~ 3000 4550
 Wire Wire Line
@@ -531,10 +511,10 @@ Wire Wire Line
 Wire Wire Line
 	4500 3950 4650 3950
 $Comp
-L kicad_win-rescue:GND-power #PWR?
+L kicad_win-rescue:GND-power #PWR0106
 U 1 1 5DDCA0C7
 P 5100 4450
-F 0 "#PWR?" H 5100 4200 50  0001 C CNN
+F 0 "#PWR0106" H 5100 4200 50  0001 C CNN
 F 1 "GND" H 5105 4277 50  0000 C CNN
 F 2 "" H 5100 4450 50  0001 C CNN
 F 3 "" H 5100 4450 50  0001 C CNN
@@ -544,10 +524,10 @@ $EndComp
 Wire Wire Line
 	5100 4450 5100 4350
 $Comp
-L kicad_win-rescue:GND-power #PWR?
+L kicad_win-rescue:GND-power #PWR0107
 U 1 1 5DDCFDF9
 P 3000 5300
-F 0 "#PWR?" H 3000 5050 50  0001 C CNN
+F 0 "#PWR0107" H 3000 5050 50  0001 C CNN
 F 1 "GND" H 3005 5127 50  0000 C CNN
 F 2 "" H 3000 5300 50  0001 C CNN
 F 3 "" H 3000 5300 50  0001 C CNN
@@ -559,10 +539,10 @@ Wire Wire Line
 Wire Wire Line
 	3900 3300 3350 3300
 $Comp
-L kicad_win-rescue:GND-power #PWR?
+L kicad_win-rescue:GND-power #PWR0108
 U 1 1 5DD8120C
 P 3900 3600
-F 0 "#PWR?" H 3900 3350 50  0001 C CNN
+F 0 "#PWR0108" H 3900 3350 50  0001 C CNN
 F 1 "GND" H 3905 3427 50  0000 C CNN
 F 2 "" H 3900 3600 50  0001 C CNN
 F 3 "" H 3900 3600 50  0001 C CNN
@@ -570,10 +550,10 @@ F 3 "" H 3900 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L kicad_win-rescue:C-Device C?
+L kicad_win-rescue:C-Device C2
 U 1 1 5DD7D329
 P 3900 3450
-F 0 "C?" H 4015 3496 50  0000 L CNN
+F 0 "C2" H 4015 3496 50  0000 L CNN
 F 1 "C" H 4015 3405 50  0000 L CNN
 F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 3938 3300 50  0001 C CNN
 F 3 "~" H 3900 3450 50  0001 C CNN
@@ -581,26 +561,12 @@ F 3 "~" H 3900 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3600 3950 3750 3950
-Connection ~ 3750 3950
-$Comp
-L kicad_win-rescue:LTC1100xN8-Amplifier_Instrumentation U?
-U 1 1 5DD56355
-P 3450 3950
-F 0 "U?" H 3650 3850 50  0000 L CNN
-F 1 "LTC1050" H 3650 3750 50  0000 L CNN
-F 2 "LTC1050CN8:PDIP-8_N" H 3450 3950 50  0001 C CNN
-F 3 "" H 3450 3950 50  0001 C CNN
-	1    3450 3950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	3350 3650 3350 3300
 $Comp
-L kicad_win-rescue:+5V-power #PWR?
+L kicad_win-rescue:+5V-power #PWR0109
 U 1 1 5DD60CA0
 P 3350 3250
-F 0 "#PWR?" H 3350 3100 50  0001 C CNN
+F 0 "#PWR0109" H 3350 3100 50  0001 C CNN
 F 1 "+5V" H 3365 3423 50  0000 C CNN
 F 2 "" H 3350 3250 50  0001 C CNN
 F 3 "" H 3350 3250 50  0001 C CNN
@@ -613,8 +579,6 @@ Connection ~ 3350 3300
 Wire Wire Line
 	2150 3850 2150 3800
 Connection ~ 2150 3850
-Wire Wire Line
-	2150 3450 2150 3500
 Wire Notes Line
 	5600 5600 1700 5600
 Wire Notes Line
@@ -632,8 +596,6 @@ Wire Notes Line
 Wire Wire Line
 	3000 4550 4150 4550
 Wire Wire Line
-	3750 3950 4150 3950
-Wire Wire Line
 	4500 4550 4150 4550
 Connection ~ 4150 4550
 Wire Wire Line
@@ -649,11 +611,11 @@ Gas_Value
 Text Label 10550 2800 0    50   ~ 0
 Gas_Interrupt
 Text Label 10550 2500 0    50   ~ 0
-Gas_Trigger_Offset
+Gas_Trigger_Offset_PWM
 Text Label 10550 2400 0    50   ~ 0
-Gas_Trigger_Diff
+Gas_Trigger_Diff_PWM
 Text Label 8900 2600 2    50   ~ 0
-Poly_Resistor
+TempSens
 Text Label 10550 1900 0    50   ~ 0
 Lora_TX
 Text Label 10550 1800 0    50   ~ 0
@@ -661,29 +623,18 @@ Lora_RX
 Text Label 10550 1700 0    50   ~ 0
 Lora_Reset
 Text Label 10550 2700 0    50   ~ 0
-Gas_Temp_Target
-$Comp
-L kicad_win-rescue:LTC1100xN8-Amplifier_Instrumentation U?
-U 1 1 5DE1606C
-P 3150 1650
-F 0 "U?" H 3350 1550 50  0000 L CNN
-F 1 "LTC1050" H 3350 1450 50  0000 L CNN
-F 2 "LTC1050CN8:PDIP-8_N" H 3150 1650 50  0001 C CNN
-F 3 "" H 3150 1650 50  0001 C CNN
-	1    3150 1650
-	1    0    0    -1  
-$EndComp
+Gas_Temp_Target_PWM
 Text Label 3450 1650 0    50   ~ 0
 Heater
 Text Label 2850 1550 2    50   ~ 0
-Gas_Temp_Target
-Text Label 2850 2000 2    50   ~ 0
-Poly_Resistor
+Gas_Temp_Target_Anal
+Text Label 2600 1950 2    50   ~ 0
+TempSens
 $Comp
-L kicad_win-rescue:R-Device R?
+L kicad_win-rescue:R-Device R4
 U 1 1 5DE1BEC5
 P 2500 1750
-F 0 "R?" V 2400 1700 50  0000 C CNN
+F 0 "R4" V 2400 1700 50  0000 C CNN
 F 1 "R" V 2400 1800 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2615 1750 50  0001 C CNN
 F 3 "~" H 2500 1750 50  0001 C CNN
@@ -692,12 +643,11 @@ F 3 "~" H 2500 1750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2850 1750 2650 1750
-Connection ~ 2850 1750
 $Comp
-L kicad_win-rescue:+5V-power #PWR?
+L kicad_win-rescue:+5V-power #PWR0110
 U 1 1 5DE219B2
 P 2000 1750
-F 0 "#PWR?" H 2000 1600 50  0001 C CNN
+F 0 "#PWR0110" H 2000 1600 50  0001 C CNN
 F 1 "+5V" V 2015 1923 50  0000 C CNN
 F 2 "" H 2000 1750 50  0001 C CNN
 F 3 "" H 2000 1750 50  0001 C CNN
@@ -707,10 +657,10 @@ $EndComp
 Wire Wire Line
 	2000 1750 2050 1750
 $Comp
-L kicad_win-rescue:R-Device R?
+L kicad_win-rescue:R-Device R3
 U 1 1 5DE2933A
 P 2200 1750
-F 0 "R?" V 2100 1700 50  0000 C CNN
+F 0 "R3" V 2100 1700 50  0000 C CNN
 F 1 "R" V 2100 1800 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2315 1750 50  0001 C CNN
 F 3 "~" H 2200 1750 50  0001 C CNN
@@ -719,26 +669,22 @@ F 3 "~" H 2200 1750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3050 1950 3050 2000
-Wire Wire Line
-	3050 2000 3150 2000
-Wire Wire Line
-	3250 2000 3250 1950
 $Comp
-L kicad_win-rescue:GND-power #PWR?
+L kicad_win-rescue:GND-power #PWR0111
 U 1 1 5DE2F1D2
-P 3150 2000
-F 0 "#PWR?" H 3150 1750 50  0001 C CNN
-F 1 "GND" H 3150 1850 50  0000 C CNN
-F 2 "" H 3150 2000 50  0000 C CNN
-F 3 "" H 3150 2000 50  0000 C CNN
-	1    3150 2000
+P 3050 2000
+F 0 "#PWR0111" H 3050 1750 50  0001 C CNN
+F 1 "GND" H 3050 1850 50  0000 C CNN
+F 2 "" H 3050 2000 50  0000 C CNN
+F 3 "" H 3050 2000 50  0000 C CNN
+	1    3050 2000
 	1    0    0    -1  
 $EndComp
 $Comp
-L kicad_win-rescue:+5V-power #PWR?
+L kicad_win-rescue:+5V-power #PWR0112
 U 1 1 5DE31212
 P 3050 1350
-F 0 "#PWR?" H 3050 1200 50  0001 C CNN
+F 0 "#PWR0112" H 3050 1200 50  0001 C CNN
 F 1 "+5V" H 3065 1523 50  0000 C CNN
 F 2 "" H 3050 1350 50  0001 C CNN
 F 3 "" H 3050 1350 50  0001 C CNN
@@ -759,128 +705,104 @@ Wire Notes Line
 	2650 1050 2650 1200
 Wire Notes Line
 	2650 1200 1700 1200
-Connection ~ 3150 2000
 Wire Wire Line
-	3150 2000 3250 2000
+	2850 1750 2850 1950
 $Comp
-L kicad_win-rescue:LTC1100xN8-Amplifier_Instrumentation U?
-U 1 1 5DE40259
-P 9050 5100
-F 0 "U?" H 9250 5000 50  0000 L CNN
-F 1 "LTC1050" H 9250 4900 50  0000 L CNN
-F 2 "LTC1050CN8:PDIP-8_N" H 9050 5100 50  0001 C CNN
-F 3 "" H 9050 5100 50  0001 C CNN
-	1    9050 5100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2850 1750 2850 2000
-$Comp
-L kicad_win-rescue:+5V-power #PWR?
+L kicad_win-rescue:+5V-power #PWR0113
 U 1 1 5DE474A2
-P 8950 4800
-F 0 "#PWR?" H 8950 4650 50  0001 C CNN
-F 1 "+5V" H 8965 4973 50  0000 C CNN
-F 2 "" H 8950 4800 50  0001 C CNN
-F 3 "" H 8950 4800 50  0001 C CNN
-	1    8950 4800
+P 9100 4800
+F 0 "#PWR0113" H 9100 4650 50  0001 C CNN
+F 1 "+5V" H 9115 4973 50  0000 C CNN
+F 2 "" H 9100 4800 50  0001 C CNN
+F 3 "" H 9100 4800 50  0001 C CNN
+	1    9100 4800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8950 5400 8950 5450
-Wire Wire Line
-	8950 5450 9150 5450
-Wire Wire Line
-	9150 5450 9150 5400
+	9100 5400 9100 5450
 $Comp
-L kicad_win-rescue:GND-power #PWR?
+L kicad_win-rescue:GND-power #PWR0114
 U 1 1 5DE4BC6B
-P 9050 5450
-F 0 "#PWR?" H 9050 5200 50  0001 C CNN
-F 1 "GND" H 9050 5300 50  0000 C CNN
-F 2 "" H 9050 5450 50  0000 C CNN
-F 3 "" H 9050 5450 50  0000 C CNN
-	1    9050 5450
+P 9100 5450
+F 0 "#PWR0114" H 9100 5200 50  0001 C CNN
+F 1 "GND" H 9100 5300 50  0000 C CNN
+F 2 "" H 9100 5450 50  0000 C CNN
+F 3 "" H 9100 5450 50  0000 C CNN
+	1    9100 5450
 	1    0    0    -1  
 $EndComp
-Text Label 9750 5100 0    50   ~ 0
+Text Label 9900 5100 0    50   ~ 0
 Gas_Interrupt
 Wire Wire Line
-	9350 5100 9550 5100
+	9500 5100 9700 5100
 $Comp
-L kicad_win-rescue:R-Device R?
+L kicad_win-rescue:R-Device R13
 U 1 1 5DE535B2
-P 9550 4800
-F 0 "R?" H 9650 4750 50  0000 C CNN
-F 1 "R" H 9650 4850 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9665 4800 50  0001 C CNN
-F 3 "~" H 9550 4800 50  0001 C CNN
-	1    9550 4800
+P 9700 4800
+F 0 "R13" H 9800 4750 50  0000 C CNN
+F 1 "R" H 9800 4850 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9815 4800 50  0001 C CNN
+F 3 "~" H 9700 4800 50  0001 C CNN
+	1    9700 4800
 	-1   0    0    1   
 $EndComp
 $Comp
-L kicad_win-rescue:R-Device R?
+L kicad_win-rescue:R-Device R12
 U 1 1 5DE5F3AC
-P 9550 4250
-F 0 "R?" H 9650 4200 50  0000 C CNN
-F 1 "R" H 9650 4300 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9665 4250 50  0001 C CNN
-F 3 "~" H 9550 4250 50  0001 C CNN
-	1    9550 4250
+P 9700 4250
+F 0 "R12" H 9800 4200 50  0000 C CNN
+F 1 "R" H 9800 4300 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9815 4250 50  0001 C CNN
+F 3 "~" H 9700 4250 50  0001 C CNN
+	1    9700 4250
 	-1   0    0    1   
 $EndComp
-Connection ~ 9550 5100
+Connection ~ 9700 5100
 Wire Wire Line
-	9550 5100 9750 5100
-Text Label 9550 4100 0    50   ~ 0
-Gas_Trigger_Diff
+	9700 5100 9900 5100
+Text Label 9700 4100 0    50   ~ 0
+Gas_Trigger_Diff_Anal
 Wire Wire Line
-	8550 5000 8750 5000
+	8700 5000 8900 5000
 $Comp
-L kicad_win-rescue:R-Device R?
+L kicad_win-rescue:R-Device R11
 U 1 1 5DE6E11C
-P 9000 4500
-F 0 "R?" V 9207 4500 50  0000 C CNN
-F 1 "R" V 9116 4500 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9115 4500 50  0001 C CNN
-F 3 "~" H 9000 4500 50  0001 C CNN
-	1    9000 4500
+P 9150 4500
+F 0 "R11" V 9357 4500 50  0000 C CNN
+F 1 "R" V 9266 4500 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9265 4500 50  0001 C CNN
+F 3 "~" H 9150 4500 50  0001 C CNN
+	1    9150 4500
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	8550 4500 8850 4500
+	8700 4500 9000 4500
 $Comp
-L kicad_win-rescue:R-Device R?
+L kicad_win-rescue:R-Device R10
 U 1 1 5DE70C6E
-P 8250 5000
-F 0 "R?" V 8457 5000 50  0000 C CNN
-F 1 "R" V 8366 5000 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8365 5000 50  0001 C CNN
-F 3 "~" H 8250 5000 50  0001 C CNN
-	1    8250 5000
+P 8400 5000
+F 0 "R10" V 8607 5000 50  0000 C CNN
+F 1 "R" V 8516 5000 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8515 5000 50  0001 C CNN
+F 3 "~" H 8400 5000 50  0001 C CNN
+	1    8400 5000
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	8550 5000 8400 5000
+	8700 5000 8550 5000
 Wire Wire Line
-	9150 4500 9550 4500
-Connection ~ 9550 4500
+	9300 4500 9700 4500
+Connection ~ 9700 4500
 Wire Wire Line
-	9550 4500 9550 4650
+	9700 4500 9700 4650
 Wire Wire Line
-	8550 4500 8550 5000
-Text Label 8100 5000 2    50   ~ 0
-Gas_Trigger_Offset
+	8700 4500 8700 5000
 Wire Wire Line
-	9550 4950 9550 5100
+	9700 4950 9700 5100
 Wire Wire Line
-	9550 4400 9550 4500
+	9700 4400 9700 4500
 Wire Notes Line
-	7250 3950 10300 3950
-Wire Notes Line
-	10300 3950 10300 5700
-Wire Notes Line
-	10300 5700 7250 5700
+	10550 3950 10550 5700
 Wire Notes Line
 	7250 5700 7250 3950
 Text Notes 7300 4050 0    50   ~ 0
@@ -889,17 +811,17 @@ Wire Notes Line
 	8350 3950 8350 4100
 Wire Notes Line
 	8350 4100 7250 4100
-Text Label 8750 5200 2    50   ~ 0
+Text Label 8900 5200 2    50   ~ 0
 Gas_Value
 Text Label 10550 2000 0    50   ~ 0
 Buzzer
 Text Label 6600 3250 2    50   ~ 0
 Buzzer
 $Comp
-L kicad_win-rescue:GND-power #PWR?
+L kicad_win-rescue:GND-power #PWR0115
 U 1 1 5DEA192E
 P 6600 3450
-F 0 "#PWR?" H 6600 3200 50  0001 C CNN
+F 0 "#PWR0115" H 6600 3200 50  0001 C CNN
 F 1 "GND" H 6600 3300 50  0000 C CNN
 F 2 "" H 6600 3450 50  0000 C CNN
 F 3 "" H 6600 3450 50  0000 C CNN
@@ -920,4 +842,259 @@ Wire Notes Line
 	6600 3000 6600 3150
 Wire Notes Line
 	6600 3150 6200 3150
+$Comp
+L Amplifier_Operational:AD8001AR U2
+U 1 1 5DE466C8
+P 3450 3950
+F 0 "U2" H 3794 3996 50  0000 L CNN
+F 1 "AD8001AR" H 3794 3905 50  0000 L CNN
+F 2 "LTC1050ACN8:PDIP-8_N" H 3350 3750 50  0001 L CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ad8001.pdf" H 3600 4100 50  0001 C CNN
+	1    3450 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 3950 3750 3950
+Connection ~ 3750 3950
+Wire Wire Line
+	3750 3950 4150 3950
+$Comp
+L Gas_Sensor:Gas_Sensor_TO-5-10 U4
+U 1 1 5DE515C9
+P 7650 1150
+F 0 "U4" H 7550 1365 50  0000 C CNN
+F 1 "Gas_Sensor_TO-5-10" H 7550 1274 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-5-10" H 7650 1150 50  0001 C CNN
+F 3 "" H 7650 1150 50  0001 C CNN
+	1    7650 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5DE52EC9
+P 7950 1350
+F 0 "#PWR0102" H 7950 1100 50  0001 C CNN
+F 1 "GND" V 7955 1222 50  0000 R CNN
+F 2 "" H 7950 1350 50  0001 C CNN
+F 3 "" H 7950 1350 50  0001 C CNN
+	1    7950 1350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7850 1300 7950 1300
+Wire Wire Line
+	7950 1400 7850 1400
+Wire Wire Line
+	7950 1300 7950 1350
+Text Label 5000 950  2    50   ~ 0
+Gas_Trigger_Diff_PWM
+$Comp
+L kicad_win-rescue:R-Device R14
+U 1 1 5DE5DC53
+P 5150 950
+F 0 "R14" V 5050 900 50  0000 C CNN
+F 1 "R" V 5050 1000 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5265 950 50  0001 C CNN
+F 3 "~" H 5150 950 50  0001 C CNN
+	1    5150 950 
+	0    1    1    0   
+$EndComp
+$Comp
+L kicad_win-rescue:C-Device C5
+U 1 1 5DE60D5E
+P 5400 1100
+F 0 "C5" H 5515 1146 50  0000 L CNN
+F 1 "C" H 5515 1055 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 5438 950 50  0001 C CNN
+F 3 "~" H 5400 1100 50  0001 C CNN
+	1    5400 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 950  5300 950 
+Wire Wire Line
+	5500 950  5400 950 
+Connection ~ 5400 950 
+$Comp
+L power:GND #PWR0116
+U 1 1 5DE75256
+P 5400 1250
+F 0 "#PWR0116" H 5400 1000 50  0001 C CNN
+F 1 "GND" H 5250 1200 50  0000 C CNN
+F 2 "" H 5400 1250 50  0001 C CNN
+F 3 "" H 5400 1250 50  0001 C CNN
+	1    5400 1250
+	1    0    0    -1  
+$EndComp
+Text Label 5500 950  0    50   ~ 0
+Gas_Trigger_Diff_Anal
+Text Label 5000 1550 2    50   ~ 0
+Gas_Trigger_Offset_PWM
+$Comp
+L kicad_win-rescue:R-Device R15
+U 1 1 5DE7CB45
+P 5150 1550
+F 0 "R15" V 5050 1500 50  0000 C CNN
+F 1 "R" V 5050 1600 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5265 1550 50  0001 C CNN
+F 3 "~" H 5150 1550 50  0001 C CNN
+	1    5150 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L kicad_win-rescue:C-Device C6
+U 1 1 5DE7CB4B
+P 5400 1700
+F 0 "C6" H 5515 1746 50  0000 L CNN
+F 1 "C" H 5515 1655 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 5438 1550 50  0001 C CNN
+F 3 "~" H 5400 1700 50  0001 C CNN
+	1    5400 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 1550 5300 1550
+Wire Wire Line
+	5500 1550 5400 1550
+Connection ~ 5400 1550
+$Comp
+L power:GND #PWR0117
+U 1 1 5DE7CB54
+P 5400 1850
+F 0 "#PWR0117" H 5400 1600 50  0001 C CNN
+F 1 "GND" H 5250 1800 50  0000 C CNN
+F 2 "" H 5400 1850 50  0001 C CNN
+F 3 "" H 5400 1850 50  0001 C CNN
+	1    5400 1850
+	1    0    0    -1  
+$EndComp
+Text Label 5500 1550 0    50   ~ 0
+Gas_Trigger_Offset_Anal
+Text Label 5000 2150 2    50   ~ 0
+Gas_Temp_Target_PWM
+$Comp
+L kicad_win-rescue:R-Device R16
+U 1 1 5DE804FE
+P 5150 2150
+F 0 "R16" V 5050 2100 50  0000 C CNN
+F 1 "R" V 5050 2200 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5265 2150 50  0001 C CNN
+F 3 "~" H 5150 2150 50  0001 C CNN
+	1    5150 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L kicad_win-rescue:C-Device C7
+U 1 1 5DE80504
+P 5400 2300
+F 0 "C7" H 5515 2346 50  0000 L CNN
+F 1 "C" H 5515 2255 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 5438 2150 50  0001 C CNN
+F 3 "~" H 5400 2300 50  0001 C CNN
+	1    5400 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 2150 5300 2150
+Wire Wire Line
+	5500 2150 5400 2150
+Connection ~ 5400 2150
+$Comp
+L power:GND #PWR0118
+U 1 1 5DE8050D
+P 5400 2450
+F 0 "#PWR0118" H 5400 2200 50  0001 C CNN
+F 1 "GND" H 5250 2400 50  0000 C CNN
+F 2 "" H 5400 2450 50  0001 C CNN
+F 3 "" H 5400 2450 50  0001 C CNN
+	1    5400 2450
+	1    0    0    -1  
+$EndComp
+Text Label 5500 2150 0    50   ~ 0
+Gas_Temp_Target_Anal
+Wire Notes Line
+	4000 650  6550 650 
+Wire Notes Line
+	6550 650  6550 2650
+Wire Notes Line
+	6550 2650 4000 2650
+Wire Notes Line
+	4000 2650 4000 650 
+Connection ~ 7950 1350
+Wire Wire Line
+	7950 1350 7950 1400
+Text Label 7250 1400 2    50   ~ 0
+Heater
+Text Label 2150 3350 0    50   ~ 0
+GasSens
+Text Label 7250 1200 2    50   ~ 0
+GasSens
+$Comp
+L power:+3.3V #PWR0119
+U 1 1 5DEA8961
+P 7850 1200
+F 0 "#PWR0119" H 7850 1050 50  0001 C CNN
+F 1 "+3.3V" V 7865 1328 50  0000 L CNN
+F 2 "" H 7850 1200 50  0001 C CNN
+F 3 "" H 7850 1200 50  0001 C CNN
+	1    7850 1200
+	0    1    1    0   
+$EndComp
+Text Label 7250 1300 2    50   ~ 0
+TempSens
+Text Label 8250 5000 2    50   ~ 0
+Gas_Trigger_Offset_Anal
+Wire Wire Line
+	2600 1950 2850 1950
+Wire Wire Line
+	2150 3350 2150 3500
+Connection ~ 8700 5000
+Wire Notes Line
+	7250 3950 10550 3950
+Wire Notes Line
+	7250 5700 10550 5700
+Wire Notes Line
+	6800 800  8300 800 
+Wire Notes Line
+	8300 800  8300 1600
+Wire Notes Line
+	8300 1600 6800 1600
+Wire Notes Line
+	6800 1600 6800 800 
+Text Notes 2450 1000 0    50   ~ 0
+L'ao peut délivrer assez ? \nou faut mettre ca dans un transistor
+Text Notes 4050 750  0    50   ~ 0
+DACs
+Wire Notes Line
+	4000 800  4300 800 
+Wire Notes Line
+	4300 800  4300 650 
+Text Notes 6850 900  0    50   ~ 0
+Sensor
+Wire Notes Line
+	6800 950  7150 950 
+Wire Notes Line
+	7150 800  7150 950 
+$Comp
+L Amplifier_Operational:AD8001AR U3
+U 1 1 5DEFD374
+P 9200 5100
+F 0 "U3" H 9544 5146 50  0000 L CNN
+F 1 "AD8001AR" H 9544 5055 50  0000 L CNN
+F 2 "LTC1050ACN8:PDIP-8_N" H 9100 4900 50  0001 L CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ad8001.pdf" H 9350 5250 50  0001 C CNN
+	1    9200 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:AD8001AR U1
+U 1 1 5DF098E8
+P 3150 1650
+F 0 "U1" H 3494 1696 50  0000 L CNN
+F 1 "AD8001AR" H 3494 1605 50  0000 L CNN
+F 2 "LTC1050ACN8:PDIP-8_N" H 3050 1450 50  0001 L CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ad8001.pdf" H 3300 1800 50  0001 C CNN
+	1    3150 1650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
