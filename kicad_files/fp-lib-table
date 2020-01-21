@@ -6,4 +6,5 @@
   (lib (name LEDs_THT)(type KiCad)(uri ${KIPRJMOD}/libraries/LEDs_THT.pretty)(options "")(descr ""))
   (lib (name Resistors_THT)(type KiCad)(uri ${KIPRJMOD}/libraries/Resistors_THT.pretty)(options "")(descr ""))
   (lib (name Buzzers_Beepers)(type KiCad)(uri ${KIPRJMOD}/libraries/Buzzers_Beepers)(options "")(descr ""))
+  (lib (name RN2483-I_RM095)(type Legacy)(uri ${KIPRJMOD}/libraries/RN2483-I_RM095.mod)(options "")(descr ""))
 )

@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name kicad_win-rescue)(type Legacy)(uri ${KIPRJMOD}/kicad_win-rescue.lib)(options "")(descr ""))
   (lib (name Gas_Sensor)(type Legacy)(uri ${KIPRJMOD}/libraries/Gas_Sensor.lib)(options "")(descr ""))
+  (lib (name RN2483-I_RM095)(type Legacy)(uri ${KIPRJMOD}/libraries/RN2483-I_RM095.lib)(options "")(descr ""))
 )
