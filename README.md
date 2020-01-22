@@ -6,7 +6,7 @@ On this github, you will find KiCad files to print your PCB and Arduino files to
 ![](https://github.com/noeltaillardat/SmartGasSensor/blob/master/homemade%C2%B5Shield-shiny.png "Shield")
 
 ## Functionalities
-* Gas sensor + Electrical noise reduction
+* Gas sensor + Electrical noise reduction + Temperature setting
 * Warning trigger + visual warning 
 * LoRa communication + TTN connection
 * Buzzer can be activated
@@ -14,8 +14,11 @@ On this github, you will find KiCad files to print your PCB and Arduino files to
 ### Gas sensor + Electrical noise reduction
 Gas sensor made at the AIME whiteroom of Toulouse.
 
-On the shield, filters are made to reduce the electrical noise. There is a passive filter to cancel HF noise at the start of the circuit. An active filter with an Op-Amp is on to be more efficient.
+On the shield, filters are made to reduce the electrical noise. There is a passive filter to cancel HF noise at the start of the circuit. An active filter with an Op-Amp is on to be more efficient. The gain can be modified with the potentiometer named *PT1*.
 A passive filter at the end of the circuit is used to filter noise induced by the circuit.
+
+The temperature can be set to improve gas recognition with *Gas_Temp_Target*.
+The feedback loop gain can be modified with the *PT2* potentiometer.
 
 ### LoRa communication + TTN connection
 You will find as well *ttn_script.js* to use on the TheThingsNetwork console to decrypt the data.
