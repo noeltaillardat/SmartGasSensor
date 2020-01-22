@@ -40,3 +40,18 @@ A buzzer can be activated with a *analogWrite* command.
 
 A usage would be to set it to ring when the warning goes on, or when the warning is on.
 Another can be to ring when the LoRa connection fails.
+
+## Routing & schematics
+
+Below is the schematic of our shield, including all the features explained above.
+
+![](https://github.com/noeltaillardat/SmartGasSensor/blob/master/schematic.png "Schematic")
+
+From there, the routing of our shield is achieved as shown below:
+
+![](https://github.com/noeltaillardat/SmartGasSensor/blob/master/route.png "Routes")
+
+Here, a 3D view (from Blender) of the shield: 
+
+![](https://github.com/noeltaillardat/SmartGasSensor/blob/master/homemadeShield.png "Final view")
+
