@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:kicad_win-cache
-EELAYER 30 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -325,7 +325,7 @@ L kicad_win-rescue:R-Device R1
 U 1 1 5DCB106C
 P 7550 2000
 F 0 "R1" V 7757 2000 50  0000 C CNN
-F 1 "R" V 7666 2000 50  0000 C CNN
+F 1 "1k" V 7666 2000 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7665 2000 50  0001 C CNN
 F 3 "~" H 7550 2000 50  0001 C CNN
 	1    7550 2000
@@ -364,21 +364,10 @@ Text Label 6200 3600 0    50   ~ 0
 Heater
 Text Label 5600 3500 2    50   ~ 0
 Gas_Temp_Target_Anal
-Text Label 5350 3900 2    50   ~ 0
+Text Label 4950 3900 2    50   ~ 0
 TempSens
-$Comp
-L kicad_win-rescue:R-Device R4
-U 1 1 5DE1BEC5
-P 5250 3700
-F 0 "R4" V 5150 3650 50  0000 C CNN
-F 1 "R" V 5150 3750 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5365 3700 50  0001 C CNN
-F 3 "~" H 5250 3700 50  0001 C CNN
-	1    5250 3700
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	5600 3700 5400 3700
+	5600 3700 5550 3700
 $Comp
 L kicad_win-rescue:+5V-power #PWR0110
 U 1 1 5DE219B2
@@ -393,10 +382,10 @@ $EndComp
 Wire Wire Line
 	4750 3700 4800 3700
 $Comp
-L kicad_win-rescue:R-Device R3
+L kicad_win-rescue:R-Device PT2
 U 1 1 5DE2933A
 P 4950 3700
-F 0 "R3" V 4850 3650 50  0000 C CNN
+F 0 "PT2" V 4850 3650 50  0000 C CNN
 F 1 "R" V 4850 3750 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5065 3700 50  0001 C CNN
 F 3 "~" H 4950 3700 50  0001 C CNN
@@ -442,19 +431,6 @@ Wire Notes Line
 Wire Notes Line
 	5400 3150 4450 3150
 Wire Wire Line
-	5600 3700 5600 3900
-$Comp
-L kicad_win-rescue:+5V-power #PWR0113
-U 1 1 5DE474A2
-P 2450 1500
-F 0 "#PWR0113" H 2450 1350 50  0001 C CNN
-F 1 "+5V" H 2465 1673 50  0000 C CNN
-F 2 "" H 2450 1500 50  0001 C CNN
-F 3 "" H 2450 1500 50  0001 C CNN
-	1    2450 1500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	2450 2100 2450 2150
 $Comp
 L kicad_win-rescue:GND-power #PWR0114
@@ -476,18 +452,18 @@ L kicad_win-rescue:R-Device R13
 U 1 1 5DE535B2
 P 3050 1500
 F 0 "R13" H 3150 1450 50  0000 C CNN
-F 1 "R" H 3150 1550 50  0000 C CNN
+F 1 "1k" H 3150 1550 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3165 1500 50  0001 C CNN
 F 3 "~" H 3050 1500 50  0001 C CNN
 	1    3050 1500
 	-1   0    0    1   
 $EndComp
 $Comp
-L kicad_win-rescue:R-Device R12
+L kicad_win-rescue:R-Device PT3
 U 1 1 5DE5F3AC
 P 3050 950
-F 0 "R12" H 3150 900 50  0000 C CNN
-F 1 "R" H 3150 1000 50  0000 C CNN
+F 0 "PT3" H 3150 900 50  0000 C CNN
+F 1 "1k" H 3150 1000 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3165 950 50  0001 C CNN
 F 3 "~" H 3050 950 50  0001 C CNN
 	1    3050 950 
@@ -505,7 +481,7 @@ L kicad_win-rescue:R-Device R11
 U 1 1 5DE6E11C
 P 2500 1200
 F 0 "R11" V 2707 1200 50  0000 C CNN
-F 1 "R" V 2616 1200 50  0000 C CNN
+F 1 "10k" V 2616 1200 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2615 1200 50  0001 C CNN
 F 3 "~" H 2500 1200 50  0001 C CNN
 	1    2500 1200
@@ -514,11 +490,11 @@ $EndComp
 Wire Wire Line
 	2050 1200 2350 1200
 $Comp
-L kicad_win-rescue:R-Device R10
+L kicad_win-rescue:R-Device PT4
 U 1 1 5DE70C6E
 P 1750 1700
-F 0 "R10" V 1957 1700 50  0000 C CNN
-F 1 "R" V 1866 1700 50  0000 C CNN
+F 0 "PT4" V 1957 1700 50  0000 C CNN
+F 1 "10k" V 1866 1700 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1865 1700 50  0001 C CNN
 F 3 "~" H 1750 1700 50  0001 C CNN
 	1    1750 1700
@@ -582,7 +558,7 @@ F 3 "" H 7700 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0102
+L kicad_win-rescue:GND-power #PWR0102
 U 1 1 5DE52EC9
 P 8000 1250
 F 0 "#PWR0102" H 8000 1000 50  0001 C CNN
@@ -605,7 +581,7 @@ L kicad_win-rescue:R-Device R14
 U 1 1 5DE5DC53
 P 5150 950
 F 0 "R14" V 5050 900 50  0000 C CNN
-F 1 "R" V 5050 1000 50  0000 C CNN
+F 1 "10k" V 5050 1000 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5265 950 50  0001 C CNN
 F 3 "~" H 5150 950 50  0001 C CNN
 	1    5150 950 
@@ -616,7 +592,7 @@ L kicad_win-rescue:C-Device C5
 U 1 1 5DE60D5E
 P 5400 1100
 F 0 "C5" H 5515 1146 50  0000 L CNN
-F 1 "C" H 5515 1055 50  0000 L CNN
+F 1 "10u" H 5515 1055 50  0000 L CNN
 F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 5438 950 50  0001 C CNN
 F 3 "~" H 5400 1100 50  0001 C CNN
 	1    5400 1100
@@ -628,7 +604,7 @@ Wire Wire Line
 	5500 950  5400 950 
 Connection ~ 5400 950 
 $Comp
-L power:GND #PWR0116
+L kicad_win-rescue:GND-power #PWR0116
 U 1 1 5DE75256
 P 5400 1250
 F 0 "#PWR0116" H 5400 1000 50  0001 C CNN
@@ -647,7 +623,7 @@ L kicad_win-rescue:R-Device R15
 U 1 1 5DE7CB45
 P 5150 1550
 F 0 "R15" V 5050 1500 50  0000 C CNN
-F 1 "R" V 5050 1600 50  0000 C CNN
+F 1 "10k" V 5050 1600 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5265 1550 50  0001 C CNN
 F 3 "~" H 5150 1550 50  0001 C CNN
 	1    5150 1550
@@ -658,7 +634,7 @@ L kicad_win-rescue:C-Device C6
 U 1 1 5DE7CB4B
 P 5400 1700
 F 0 "C6" H 5515 1746 50  0000 L CNN
-F 1 "C" H 5515 1655 50  0000 L CNN
+F 1 "10u" H 5515 1655 50  0000 L CNN
 F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 5438 1550 50  0001 C CNN
 F 3 "~" H 5400 1700 50  0001 C CNN
 	1    5400 1700
@@ -670,7 +646,7 @@ Wire Wire Line
 	5500 1550 5400 1550
 Connection ~ 5400 1550
 $Comp
-L power:GND #PWR0117
+L kicad_win-rescue:GND-power #PWR0117
 U 1 1 5DE7CB54
 P 5400 1850
 F 0 "#PWR0117" H 5400 1600 50  0001 C CNN
@@ -689,7 +665,7 @@ L kicad_win-rescue:R-Device R16
 U 1 1 5DE804FE
 P 5150 2150
 F 0 "R16" V 5050 2100 50  0000 C CNN
-F 1 "R" V 5050 2200 50  0000 C CNN
+F 1 "10k" V 5050 2200 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5265 2150 50  0001 C CNN
 F 3 "~" H 5150 2150 50  0001 C CNN
 	1    5150 2150
@@ -700,7 +676,7 @@ L kicad_win-rescue:C-Device C7
 U 1 1 5DE80504
 P 5400 2300
 F 0 "C7" H 5515 2346 50  0000 L CNN
-F 1 "C" H 5515 2255 50  0000 L CNN
+F 1 "10u" H 5515 2255 50  0000 L CNN
 F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 5438 2150 50  0001 C CNN
 F 3 "~" H 5400 2300 50  0001 C CNN
 	1    5400 2300
@@ -712,7 +688,7 @@ Wire Wire Line
 	5500 2150 5400 2150
 Connection ~ 5400 2150
 $Comp
-L power:GND #PWR0118
+L kicad_win-rescue:GND-power #PWR0118
 U 1 1 5DE8050D
 P 5400 2450
 F 0 "#PWR0118" H 5400 2200 50  0001 C CNN
@@ -736,7 +712,7 @@ Heater
 Text Label 7300 1100 2    50   ~ 0
 GasSens
 $Comp
-L power:+3.3V #PWR0119
+L kicad_win-rescue:+3.3V-power #PWR0119
 U 1 1 5DEA8961
 P 7900 1100
 F 0 "#PWR0119" H 7900 950 50  0001 C CNN
@@ -751,7 +727,7 @@ TempSens
 Text Label 1600 1700 2    50   ~ 0
 Gas_Trigger_Offset_Anal
 Wire Wire Line
-	5350 3900 5600 3900
+	4950 3900 5200 3900
 Connection ~ 2050 1700
 Wire Notes Line
 	600  650  3900 650 
@@ -780,7 +756,7 @@ Wire Notes Line
 Wire Notes Line
 	7200 700  7200 850 
 $Comp
-L Amplifier_Operational:AD8001AR U3
+L kicad_win-rescue:AD8001AR-Amplifier_Operational U3
 U 1 1 5DEFD374
 P 2550 1800
 F 0 "U3" H 2894 1846 50  0000 L CNN
@@ -791,7 +767,7 @@ F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ad8001.
 	1    0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Operational:AD8001AR U1
+L kicad_win-rescue:AD8001AR-Amplifier_Operational U1
 U 1 1 5DF098E8
 P 5900 3600
 F 0 "U1" H 6244 3646 50  0000 L CNN
@@ -827,7 +803,6 @@ F 8 "None" H 2400 4400 50  0001 L BNN "Field8"
 	1    2400 4400
 	1    0    0    -1  
 $EndComp
-Connection ~ 5600 3700
 Wire Wire Line
 	7450 4100 7450 4250
 Text Label 7450 4100 0    50   ~ 0
@@ -842,7 +817,7 @@ Connection ~ 9050 4700
 Wire Wire Line
 	8900 4700 9050 4700
 $Comp
-L Amplifier_Operational:AD8001AR U2
+L kicad_win-rescue:AD8001AR-Amplifier_Operational U2
 U 1 1 5DE466C8
 P 8750 4700
 F 0 "U2" H 9094 4746 50  0000 L CNN
@@ -903,7 +878,7 @@ L kicad_win-rescue:C-Device C2
 U 1 1 5DD7D329
 P 9200 4200
 F 0 "C2" H 9315 4246 50  0000 L CNN
-F 1 "C" H 9315 4155 50  0000 L CNN
+F 1 "100n" H 9315 4155 50  0000 L CNN
 F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 9238 4050 50  0001 C CNN
 F 3 "~" H 9200 4200 50  0001 C CNN
 	1    9200 4200
@@ -994,7 +969,7 @@ L kicad_win-rescue:C-Device C1
 U 1 1 5DD7E55F
 P 7450 4850
 F 0 "C1" H 7565 4896 50  0000 L CNN
-F 1 "C" H 7565 4805 50  0000 L CNN
+F 1 "100n" H 7565 4805 50  0000 L CNN
 F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 7488 4700 50  0001 C CNN
 F 3 "~" H 7450 4850 50  0001 C CNN
 	1    7450 4850
@@ -1029,7 +1004,7 @@ L kicad_win-rescue:R-Device R9
 U 1 1 5DD7B6B4
 P 10100 4700
 F 0 "R9" V 10307 4700 50  0000 C CNN
-F 1 "R" V 10216 4700 50  0000 C CNN
+F 1 "1k" V 10216 4700 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 10215 4700 50  0001 C CNN
 F 3 "~" H 10100 4700 50  0001 C CNN
 	1    10100 4700
@@ -1040,7 +1015,7 @@ L kicad_win-rescue:C-Device C4
 U 1 1 5DD7A1CA
 P 10400 4950
 F 0 "C4" H 10515 4996 50  0000 L CNN
-F 1 "C" H 10515 4905 50  0000 L CNN
+F 1 "100n" H 10515 4905 50  0000 L CNN
 F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 10438 4800 50  0001 C CNN
 F 3 "~" H 10400 4950 50  0001 C CNN
 	1    10400 4950
@@ -1051,17 +1026,17 @@ L kicad_win-rescue:R-Device R8
 U 1 1 5DD794B5
 P 9800 4950
 F 0 "R8" H 9650 4900 50  0000 C CNN
-F 1 "R" H 9650 5000 50  0000 C CNN
+F 1 "100k" H 9650 5000 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9915 4950 50  0001 C CNN
 F 3 "~" H 9800 4950 50  0001 C CNN
 	1    9800 4950
 	-1   0    0    1   
 $EndComp
 $Comp
-L kicad_win-rescue:R-Device R7
+L kicad_win-rescue:R-Device PT1
 U 1 1 5DD74FA9
 P 8300 5800
-F 0 "R7" H 8150 5750 50  0000 C CNN
+F 0 "PT1" H 8150 5750 50  0000 C CNN
 F 1 "R" H 8150 5850 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8415 5800 50  0001 C CNN
 F 3 "~" H 8300 5800 50  0001 C CNN
@@ -1073,7 +1048,7 @@ L kicad_win-rescue:R-Device R5
 U 1 1 5DD73D74
 P 7850 4850
 F 0 "R5" H 7700 4800 50  0000 C CNN
-F 1 "R" H 7700 4900 50  0000 C CNN
+F 1 "100k" H 7700 4900 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7965 4850 50  0001 C CNN
 F 3 "~" H 7850 4850 50  0001 C CNN
 	1    7850 4850
@@ -1084,7 +1059,7 @@ L kicad_win-rescue:R-Device R6
 U 1 1 5DD70B2E
 P 8300 5450
 F 0 "R6" H 8150 5400 50  0000 C CNN
-F 1 "R" H 8150 5500 50  0000 C CNN
+F 1 "500" H 8150 5500 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8415 5450 50  0001 C CNN
 F 3 "~" H 8300 5450 50  0001 C CNN
 	1    8300 5450
@@ -1095,7 +1070,7 @@ L kicad_win-rescue:R-Device R2
 U 1 1 5DD6D812
 P 7450 4400
 F 0 "R2" H 7300 4350 50  0000 C CNN
-F 1 "R" H 7300 4450 50  0000 C CNN
+F 1 "10k" H 7300 4450 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7565 4400 50  0001 C CNN
 F 3 "~" H 7450 4400 50  0001 C CNN
 	1    7450 4400
@@ -1106,14 +1081,14 @@ L kicad_win-rescue:C-Device C3
 U 1 1 5DD53567
 P 9450 4950
 F 0 "C3" H 9565 4996 50  0000 L CNN
-F 1 "C" H 9565 4905 50  0000 L CNN
+F 1 "1u" H 9565 4905 50  0000 L CNN
 F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 9488 4800 50  0001 C CNN
 F 3 "~" H 9450 4950 50  0001 C CNN
 	1    9450 4950
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0120
+L kicad_win-rescue:GND-power #PWR0120
 U 1 1 5DED76D9
 P 3200 5650
 F 0 "#PWR0120" H 3200 5400 50  0001 C CNN
@@ -1145,4 +1120,47 @@ Wire Notes Line
 	8350 2700 8350 3450
 Text Label 10550 1300 0    50   ~ 0
 Buzzer
+$Comp
+L kicad_win-rescue:+3.3V-power #PWR?
+U 1 1 5E286648
+P 2450 1500
+F 0 "#PWR?" H 2450 1350 50  0001 C CNN
+F 1 "+3.3V" V 2450 1750 50  0000 C CNN
+F 2 "" H 2450 1500 50  0000 C CNN
+F 3 "" H 2450 1500 50  0000 C CNN
+	1    2450 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L kicad_win-rescue:+3.3V-power #PWR?
+U 1 1 5E289E71
+P 3200 3200
+F 0 "#PWR?" H 3200 3050 50  0001 C CNN
+F 1 "+3.3V" V 3200 3450 50  0000 C CNN
+F 2 "" H 3200 3200 50  0000 C CNN
+F 3 "" H 3200 3200 50  0000 C CNN
+	1    3200 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 3200 3200 3300
+Connection ~ 3200 3200
+Wire Wire Line
+	5250 3700 5200 3700
+Wire Wire Line
+	5200 3700 5200 3900
+Connection ~ 5200 3700
+Wire Wire Line
+	5200 3700 5100 3700
+$Comp
+L kicad_win-rescue:R-Device R4
+U 1 1 5DE1BEC5
+P 5400 3700
+F 0 "R4" V 5300 3650 50  0000 C CNN
+F 1 "1k" V 5300 3800 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5515 3700 50  0001 C CNN
+F 3 "~" H 5400 3700 50  0001 C CNN
+	1    5400 3700
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
