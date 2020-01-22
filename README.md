@@ -3,7 +3,7 @@
 
 On this github, you will find KiCad files to print your PCB and Arduino files to upload code to use the shield.
 
-![](/homemade%C2%B5Shield-shiny.png "Shield")
+![](https://raw.githubusercontent.com/noeltaillardat/SmartGasSensor/master/homemade%C2%B5Shield-shiny.png "Shield")
 
 ## Functionalities
 * Gas sensor + Electrical noise reduction + Temperature setting
@@ -45,13 +45,13 @@ Another can be to ring when the LoRa connection fails.
 
 Below is the schematic of our shield, including all the features explained above.
 
-![](/schematic.png "Schematic")
+![](https://raw.githubusercontent.com/noeltaillardat/SmartGasSensor/master/schematic.png "Schematic")
 
 From there, the routing of our shield is achieved as shown below:
 
-![](/route.png "Routes")
+![](https://raw.githubusercontent.com/noeltaillardat/SmartGasSensor/master/route.png "Routes")
 
 Here, a 3D view (from Blender) of the shield: 
 
-![](/homemadeShield.png "Final view")
+![](https://raw.githubusercontent.com/noeltaillardat/SmartGasSensor/master/homemadeShield.png "Final view")
 
